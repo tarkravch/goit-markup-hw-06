@@ -869,6 +869,10 @@ ul {
     fill: var(--blue-text-color);
 }
 
+.close-btn:hover {
+    cursor: pointer;
+}
+
 .modal-form {
     display: flex;
     align-items: center;
@@ -912,6 +916,8 @@ ul {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-left: 35px;
+    color: #000;
 }
 
 .modal-icon-item {
@@ -919,6 +925,8 @@ ul {
     top: 11px;
     left: 12px;
     bottom: 11px;
+    width: 18px;
+    height: 18px;
 }
 
 .input-block:hover .modal-icon-item {
@@ -926,6 +934,15 @@ ul {
 }
 
 .input-block:hover .modal-input-field {
+    border-color: var(--blue-text-color);
+    cursor: pointer;
+}
+
+.modal-input-field:focus+.modal-icon-item {
+    fill: var(--blue-text-color);
+}
+
+.modal-input-field:focus {
     border-color: var(--blue-text-color);
 }
 
@@ -945,6 +962,11 @@ ul {
 }
 
 .input-block:hover .modal-input-field-comment {
+    border-color: var(--blue-text-color);
+    cursor: pointer;
+}
+
+.input-block:focus .modal-input-field-comment {
     border-color: var(--blue-text-color);
 }
 
